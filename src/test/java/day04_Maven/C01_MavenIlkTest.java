@@ -16,37 +16,40 @@ public class C01_MavenIlkTest {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
+
         //https://www.amazon.com/ sayfasina gidelim
         driver.get("https://www.amazon.com/");
 
+
         //arama kutusunu locate edelim
         WebElement aramaKutusu = driver.findElement(By.xpath("//*[@id='twotabsearchtextbox']"));
+
 
         //"Samsung headphones" ile arama yapalim
         aramaKutusu.sendKeys("Samsung headphones"); //Keys.ENTER
         aramaKutusu.submit();// Enter'a bastık
 
-        //Bulunan sonuc sayisini yazdiralim
+
+        //Bulunan sonuc sayisini yazdiralim //indeksini almak icin 1 yazdik
         WebElement aramasonucu = driver.findElement(By.xpath("(//*[@class='sg-col-inner'])[1]"));
         System.out.println("Arama Sonucu : "+aramasonucu.getText());
 
-        //Ilk urunu tiklayalim
+
+        //Ilk urune tiklayalim
         driver.findElement(By.xpath("(//*[@class='s-image'])[1]")).click();
+
 
         //Sayfadaki tum basliklari yazdiralim
         List<WebElement> sayfaBasliklariListesi = driver.findElements(By.xpath("//h1"));
-        // for (WebElement w:sayfaBasliklariListesi) {
-        //     System.out.println(w.getText());
-        // }
-        sayfaBasliklariListesi.forEach(t-> System.out.println(t.getText()));
+        for (WebElement w:sayfaBasliklariListesi) {
+        System.out.println(w.getText());
+        }
+        //lambda ile alma yontemi:  sayfaBasliklariListesi.forEach(t-> System.out.println(t.getText()));
+
 
         //Sayfayı kapatınız
         driver.close();
-
-
-
-
-
 
 
         //1 https://www.amazon.com/ sayfasina gidelim

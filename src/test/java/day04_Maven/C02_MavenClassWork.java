@@ -28,51 +28,63 @@ public class C02_MavenClassWork {
        7. amount kismina yatirmak istediginiz herhangi bir miktari yazin
        8. tarih kismina “2020-09-10” yazdirin
        9. Pay buttonuna tiklayin
-       10. “The payment was successfully submitted.” mesajinin ciktigini control edin
+       10. “The payment was successfully submitted.” mesajinin ciktigini kontrol edin.
        */
 
 
         //1http://zero.webappsecurity.com sayfasina gidin
         driver.get("http://zero.webappsecurity.com");
 
-        //2Signin buttonuna tiklayin
-        driver.findElement(By.cssSelector("i[class='icon-signin']")).click();
+
+        //2 Signin buttonuna tiklayin
+        driver.findElement(By.cssSelector("i[class='icon-signin']")).click(); //css ile denendi.
+        // driver.findElement(By.xpath("//*[@id='signin_button']")).click();
 
 
-        //3Login alanine  "username" yazdirin
+        //3 Login alanine  "username" yazdirin
         WebElement login = driver.findElement(By.xpath("//*[@id='user_login']"));
         login.sendKeys("username");
 
-        //4Password alanine "password" yazdirin
+
+        // 4Password alanine "password" yazdirin
         WebElement password = driver.findElement(By.xpath("//*[@id='user_password']"));
         password.sendKeys("password");
 
-        //5Sign in buttonuna tiklayin
-        driver.findElement(By.xpath("//*[@name='submit']")).click();
-        driver.navigate().back();
 
-        //Online Banking butonuna basınız sonra Pay Bills sayfasina gidin
+        //5 Sign in buttonuna tiklayin
+        driver.findElement(By.xpath("//*[@name='submit']")).click();
+        driver.navigate().back(); //burada sayfayi geri aldik.
+
+
+        //6 Online Banking butonuna basınız,  sonra Pay Bills sayfasina gidin
         /*
         <strong>Online Banking</strong>
          */
         driver.findElement(By.xpath("//strong[text()='Online Banking']")).click();
+
         /*
         <span class="headers" id="pay_bills_link">Pay Bills</span>
          */
         driver.findElement(By.xpath("//*[text()='Pay Bills']")).click();
 
-        //amount kismina yatirmak istediginiz herhangi bir miktari yazin.
+
+        //7 amount kismina yatirmak istediginiz herhangi bir miktari yazin.
         /*
         <input type="text" id="sp_amount" name="amount" class="span1" required="required" autocomplete="off">
          */
-        WebElement amount = driver.findElement(By.cssSelector("input[id='sp_amount']"));
+        WebElement amount = driver.findElement(By.cssSelector("input[id='sp_amount']"));//css ile aldik.
         amount.sendKeys("500");
+
+
 
         //tarih kismina "2020-09-10" yazdirin
         driver.findElement(By.xpath("//*[@id='sp_date']")).sendKeys("2020-09-10");
 
+
+
         //Pay buttonuna tiklayin
         driver.findElement(By.id("pay_saved_payees")).click();
+
 
         //"The payment was successfully submitted." mesajinin ciktigini control edin
         WebElement mesaj = driver.findElement(By.xpath("//*[text()='The payment was successfully submitted.']"));
@@ -83,11 +95,6 @@ public class C02_MavenClassWork {
 
         //sayfayi kapatin
         driver.close();
-
-
-
-
-
 
     }
 }
