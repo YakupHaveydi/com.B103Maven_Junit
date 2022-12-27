@@ -46,7 +46,7 @@ public class C02_MavenClassWork {
         login.sendKeys("username");
 
 
-        // 4Password alanine "password" yazdirin
+        // 4Password alanina "password" yazdirin
         WebElement password = driver.findElement(By.xpath("//*[@id='user_password']"));
         password.sendKeys("password");
 

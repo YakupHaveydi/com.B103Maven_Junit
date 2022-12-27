@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf535530-c14d-44df-9304-1392e5f1f6b3" name="Changes" comment="Maven_Junit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/day05_JUnit/C01_JUnitIlkTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day05_JUnit/C02_BeforeAfter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day05_JUnit/C03_BeforeAfter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day05_JUnit/C04_BeforeClassAfterClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day05_JUnit/C05_ClassWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day05_JUnit/C06_ClassWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day05_JUnit/C07_Assertion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day06_JUnit/C01_Dropdown.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day06_JUnit/C02_DropdownReusable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day04_Maven/C01_MavenIlkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day04_Maven/C01_MavenIlkTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/day04_Maven/C02_MavenClassWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day04_Maven/C02_MavenClassWork.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,33 +41,50 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.C05_ClassWork">
-    <configuration name="C01_JUnitIlkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.C01_Dropdown">
+    <configuration name="C01_Dropdown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.B103Maven_Junit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day05_JUnit.*" />
+          <option name="PATTERN" value="day06_JUnit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day05_JUnit" />
-      <option name="MAIN_CLASS_NAME" value="day05_JUnit.C01_JUnitIlkTest" />
+      <option name="PACKAGE_NAME" value="day06_JUnit" />
+      <option name="MAIN_CLASS_NAME" value="day06_JUnit.C01_Dropdown" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C03_BeforeAfter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="C01_Dropdown.getSelectedOptionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.B103Maven_Junit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day05_JUnit.*" />
+          <option name="PATTERN" value="day06_JUnit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day05_JUnit" />
-      <option name="MAIN_CLASS_NAME" value="day05_JUnit.C03_BeforeAfter" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="day06_JUnit" />
+      <option name="MAIN_CLASS_NAME" value="day06_JUnit.C01_Dropdown" />
+      <option name="METHOD_NAME" value="getSelectedOptionsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C01_Dropdown.printAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.B103Maven_Junit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day06_JUnit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day06_JUnit" />
+      <option name="MAIN_CLASS_NAME" value="day06_JUnit.C01_Dropdown" />
+      <option name="METHOD_NAME" value="printAllTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,28 +119,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C06_ClassWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.B103Maven_Junit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day05_JUnit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day05_JUnit" />
-      <option name="MAIN_CLASS_NAME" value="day05_JUnit.C06_ClassWork" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.C01_Dropdown" />
+        <item itemvalue="JUnit.C01_Dropdown.getSelectedOptionsTest" />
+        <item itemvalue="JUnit.C01_Dropdown.printAllTest" />
         <item itemvalue="JUnit.C05_ClassWork" />
         <item itemvalue="JUnit.C04_BeforeClassAfterClass" />
-        <item itemvalue="JUnit.C03_BeforeAfter" />
-        <item itemvalue="JUnit.C01_JUnitIlkTest" />
-        <item itemvalue="JUnit.C06_ClassWork" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671707194004</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Maven_Junit">
+      <created>1671819749472</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671819749472</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
