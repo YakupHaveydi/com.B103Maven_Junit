@@ -28,23 +28,27 @@ public class P05 {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }
 
+    //http://www.google.com adresine gidin
     @Before
     public void setUp() {
         driver.get("http://www.google.com");
     }
 
+    //arama kutusuna "The God Father" yazip, cikan sonuc sayisini yazdirin
     @Test
     public void test01() {
         WebElement aramaKutusu = driver.findElement(By.xpath("//*[@class='gLFyf']"));
         aramaKutusu.sendKeys("The God Father", Keys.ENTER);
     }
 
+    //arama kutusuna  "Lord of the Rings" yazip, cikan sonuc sayisini yazdirin
     @Test
     public void test02() {
         WebElement aramaKutusu = driver.findElement(By.xpath("//*[@class='gLFyf']"));
         aramaKutusu.sendKeys("Lord of the Rings", Keys.ENTER);
     }
 
+    //arama kutusuna  "Kill Bill" yazip, cikan sonuc sayisini yazdirin
     @Test
     public void test03() {
         WebElement aramaKutusu = driver.findElement(By.xpath("//*[@class='gLFyf']"));
@@ -57,6 +61,7 @@ public class P05 {
         System.out.println("Arama Sonuc Sayısı = "+sonuc[1]);
     }
 
+    //AfterClass ile kapatın
     @AfterClass
     public static void afterClass() throws Exception {
         driver.close();

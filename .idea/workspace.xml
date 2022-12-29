@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf535530-c14d-44df-9304-1392e5f1f6b3" name="Changes" comment="Maven_Junit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/practice/P01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practice/P02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practice/P03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practice/P04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practice/P05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day01_practice/C01_dropDownMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day01_practice/C02_DrpDownOptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day02_practice/C01_DropDown.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day02_practice/C02_CheckBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day02_practice/C03_RadioButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practice_2/P01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practice_2/P02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day06_JUnit/C02_DropdownReusable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day06_JUnit/C02_DropdownReusable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/practice/P05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/practice/P05.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,89 +39,100 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.P04">
-    <configuration name="P01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.P01" />
+}</component>
+  <component name="RunManager" selected="JUnit.C03_RadioButton">
+    <configuration name="C01_DropDown.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.B103Maven_Junit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practice.*" />
+          <option name="PATTERN" value="day02_practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="day02_practice" />
+      <option name="MAIN_CLASS_NAME" value="day02_practice.C01_DropDown" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="P02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.P02" />
+    <configuration name="C02_CheckBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.B103Maven_Junit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practice.*" />
+          <option name="PATTERN" value="day02_practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="P03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.P03" />
-      <module name="com.B103Maven_Junit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="practice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="P04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.P04" />
-      <module name="com.B103Maven_Junit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="practice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C01_Dropdown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.B103Maven_Junit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day06_JUnit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day06_JUnit" />
-      <option name="MAIN_CLASS_NAME" value="day06_JUnit.C01_Dropdown" />
+      <option name="PACKAGE_NAME" value="day02_practice" />
+      <option name="MAIN_CLASS_NAME" value="day02_practice.C02_CheckBox" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C03_RadioButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.B103Maven_Junit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day02_practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day02_practice" />
+      <option name="MAIN_CLASS_NAME" value="day02_practice.C03_RadioButton" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C03_RadioButton.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.B103Maven_Junit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day02_practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day02_practice" />
+      <option name="MAIN_CLASS_NAME" value="day02_practice.C03_RadioButton" />
+      <option name="METHOD_NAME" value="test03" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="P02.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.B103Maven_Junit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="practice_2" />
+      <option name="MAIN_CLASS_NAME" value="practice_2.P02" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.P04" />
-        <item itemvalue="Application.P03" />
-        <item itemvalue="Application.P02" />
-        <item itemvalue="Application.P01" />
-        <item itemvalue="JUnit.C01_Dropdown" />
+        <item itemvalue="JUnit.C03_RadioButton" />
+        <item itemvalue="JUnit.C03_RadioButton.test03" />
+        <item itemvalue="JUnit.C02_CheckBox" />
+        <item itemvalue="JUnit.C01_DropDown.test01" />
+        <item itemvalue="JUnit.P02.test01" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672158656561</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Maven_Junit">
+      <created>1672236811256</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672236811256</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
