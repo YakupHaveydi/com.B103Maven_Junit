@@ -35,6 +35,8 @@ public class C03_RadioButton {
     public void test03() {
         // https://demo.guru99.com/test/radio.html adresine gidin
         driver.get("https://demo.guru99.com/test/radio.html");
+
+
         // radiobutton elementlerini locate edin
         WebElement option1=driver.findElement(By.id("vfb-7-1"));
         WebElement option2=driver.findElement(By.id("vfb-7-2"));

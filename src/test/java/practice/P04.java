@@ -26,7 +26,7 @@ public class P04 {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         // http://the-internet.herokuapp.com/add_remove_elements/ adresine gidiniz
-        driver.get("http://the-internet.herokuapp.com/add_remove_elements/");
+        driver.get("https://the-internet.herokuapp.com/add_remove_elements/");
 
         // Add Element butonuna 100 defa basınız.
         WebElement addButton = driver.findElement(By.xpath("//*[@onclick='addElement()']"));
@@ -52,8 +52,6 @@ public class P04 {
 
         // Sayfayı kapatınız.
         driver.close();
-
-
 
 
     }

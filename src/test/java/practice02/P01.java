@@ -1,8 +1,7 @@
-package practice_2;
+package practice02;
 
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -38,18 +37,16 @@ public class P01 {
         //- electronics bölümüne tıklayınız
         driver.findElement(By.xpath("(//*[text()='Electronics'])[2]")).click();
 
+
         //- Genişliği 225 ve Uzunluğu 225 olan resimlerin hepsine tıklayalım
         //- Her sayfanın sayfa başlığını yazdıralım
         for (int i = 1; i < 25; i++) {
             List<WebElement> urunler = driver.findElements(By.xpath("//*[@width='225' and @height='225']"));
             urunler.get(i).click();
-            Thread.sleep(2000);
             System.out.println(i+". başlık : "+driver.getTitle());
-            Thread.sleep(2000);
             driver.navigate().back();
-            Thread.sleep(2000);
-        }
 
+        }
 
         //- sayfayı kapatalım
         driver.close();

@@ -34,7 +34,6 @@ public class C01_dropDownMenu {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-
     }
 
     @After
@@ -60,9 +59,9 @@ public class C01_dropDownMenu {
       // 2. Adim: Select object'i olusturulmali.
         Select select = new Select(ddMenu);
 
-       // 3. Adim: Option secilir.
+      // 3. Adim: Option secilir.
         select.selectByVisibleText("Books");
-        //select.selectByValue();
+        //select.selectByValue("search-alias=stripbooks");
         //select.selectByIndex(12);
 
 

@@ -39,10 +39,11 @@ public class P01 {
         //-title ve url'nin "Spend" kelimesinin icerip icermedigini kontrol edelim
         Assert.assertFalse(actualTitle.contains("Spend") && actualUrl.contains("Spend"));
 
+
         //-Ardindan "trendyol.com" adresine gidelim
         driver.get("https://trendyol.com");
 
-        //-bu adresin basligini alalim ve "Sitesi" kelismesini icerip icermedigini kontrol edelim
+        //-bu adresin basligini alalim ve "Sitesi" kelimesini icerip icermedigini kontrol edelim.
         String trendyolTitle = driver.getTitle();
         Assert.assertFalse(trendyolTitle.contains("Sitesi"));
 
