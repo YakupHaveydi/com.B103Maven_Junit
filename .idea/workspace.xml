@@ -5,47 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf535530-c14d-44df-9304-1392e5f1f6b3" name="Changes" comment="Maven_Junit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/DropDownKonusu/DropDownda_IslenenKonular.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day07/C01_TestBaseDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day07/C02_AlertsAccept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day07/C03_DismissAlert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day07/C04_PromptAlert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day07/C05_IFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day08/C01_WindowHandle1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day08/homework.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day09/C01_WindowHandle2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day09/C02_WindowHandle3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day09/C03_Basic_Authentication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day09/C04_Cookies.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day10/C01_Actions1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day10/C02_Actions2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day10/C03_Actions3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day10/C04_Actions4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day11/C01_Actions5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day11/C02_JavaFaker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day11/C03_FileExist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day11/C04_FileDownloadTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day12/C01_FileUpload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day12/C02_ExplicitWait.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day12/C03_FluentWait.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/homework/H01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practice02/Dropdown.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practice02/P03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practice02/P04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practice02/P05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practice02/P06.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practice02/P07.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practice02/WindowHandle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day03_practice/C01_iframe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day03_practice/C02_iframe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day04_practice/C01_WindowHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day04_practice/C02_WindowHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day04_practice/C03_WindowHandles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day04_practice/C04_ActionMoveToElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day05_practice/C01_Faker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day05_practice/C02_FileDownload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day05_practice/C05_ActionsMoveToElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day13/C01_NoSuchElementException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day13/C02_TimeOutException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day13/C03_NullPointerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day13/C04_StaleElementReferenceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day14/C01_Screenshot1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day14/C02_Screenshot2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day14/C03_ExtentReports.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practice03/HWActions01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practice03/P01_BasicAut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practice03/P03_Actions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practice03/P04_Actions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practice03/P07_BuyukKucukHarf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practice03/P2_Cookie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day01_practice/C01_dropDownMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day01_practice/C01_dropDownMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day02_practice/C03_RadioButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day02_practice/C03_RadioButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day06_JUnit/C02_DropdownReusable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day06_JUnit/C02_DropdownReusable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/practice/P01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/practice/P01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/practice/P04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/practice/P04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/practice_2/P01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/practice02/P01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/practice_2/P02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/practice02/P02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day01_practice/C02_DrpDownOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day01_practice/C02_DrpDownOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/practice02/P02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/practice02/P02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/practice02/P05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/practice02/P05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/practice02/P07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/practice02/P07.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/practice02/WindowHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/practice02/WindowHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,82 +67,84 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.file-colors&quot;
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Dropdown">
-    <configuration name="C01_FileUpload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.C02_Screenshot2">
+    <configuration name="C01_Faker" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.B103Maven_Junit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day12.*" />
+          <option name="PATTERN" value="day05_practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day12" />
-      <option name="MAIN_CLASS_NAME" value="day12.C01_FileUpload" />
+      <option name="PACKAGE_NAME" value="day05_practice" />
+      <option name="MAIN_CLASS_NAME" value="day05_practice.C01_Faker" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C01_FileUpload.name" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="C01_Screenshot1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.B103Maven_Junit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day12.*" />
+          <option name="PATTERN" value="day14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day12" />
-      <option name="MAIN_CLASS_NAME" value="day12.C01_FileUpload" />
-      <option name="METHOD_NAME" value="name" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C03_FluentWait.fluentWaitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.B103Maven_Junit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day12.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day12" />
-      <option name="MAIN_CLASS_NAME" value="day12.C03_FluentWait" />
-      <option name="METHOD_NAME" value="fluentWaitTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C04_FileDownloadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.B103Maven_Junit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day11.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day11" />
-      <option name="MAIN_CLASS_NAME" value="day11.C04_FileDownloadTest" />
+      <option name="PACKAGE_NAME" value="day14" />
+      <option name="MAIN_CLASS_NAME" value="day14.C01_Screenshot1" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Dropdown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="C01_Screenshot1.fullPageScreenshotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.B103Maven_Junit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practice02.*" />
+          <option name="PATTERN" value="day14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="practice02" />
-      <option name="MAIN_CLASS_NAME" value="practice02.Dropdown" />
+      <option name="PACKAGE_NAME" value="day14" />
+      <option name="MAIN_CLASS_NAME" value="day14.C01_Screenshot1" />
+      <option name="METHOD_NAME" value="fullPageScreenshotTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C02_FileDownload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.B103Maven_Junit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day05_practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day05_practice" />
+      <option name="MAIN_CLASS_NAME" value="day05_practice.C02_FileDownload" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C02_Screenshot2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.B103Maven_Junit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day14.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day14" />
+      <option name="MAIN_CLASS_NAME" value="day14.C02_Screenshot2" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Dropdown" />
-        <item itemvalue="JUnit.C03_FluentWait.fluentWaitTest" />
-        <item itemvalue="JUnit.C01_FileUpload.name" />
-        <item itemvalue="JUnit.C01_FileUpload" />
-        <item itemvalue="JUnit.C04_FileDownloadTest" />
+        <item itemvalue="JUnit.C02_Screenshot2" />
+        <item itemvalue="JUnit.C01_Screenshot1.fullPageScreenshotTest" />
+        <item itemvalue="JUnit.C01_Screenshot1" />
+        <item itemvalue="JUnit.C02_FileDownload" />
+        <item itemvalue="JUnit.C01_Faker" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672336036111</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Maven_Junit">
+      <created>1673265055757</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673265055757</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

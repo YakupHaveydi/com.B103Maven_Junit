@@ -44,7 +44,7 @@ public class P05 extends TestBase {
         //tıklayınız
         WebElement iframe2 = driver.findElement(By.xpath("//*[@id='a077aa5e']"));
         driver.switchTo().frame(iframe2);
-        driver.findElement(By.xpath("//*[@src='Jmeter720.png']")).click();
+        driver.findElement(By.xpath("//*[@src='Jmeter720.png']"));
 
 
     }

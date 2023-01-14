@@ -61,7 +61,7 @@ public class C02_DrpDownOptions {
 
 
        // sectiginiz option'i yazdirin
-        String sectigimOptin = select.getFirstSelectedOption().getText();
+        String sectigimOptin = select.getFirstSelectedOption().getText();//sectigimiz optionu getirmek icin kullanilir
         System.out.println("SECTIGIM OPTION : "+ sectigimOptin);
 
 

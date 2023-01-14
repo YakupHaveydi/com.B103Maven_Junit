@@ -44,7 +44,7 @@ public class WindowHandle extends TestBase {
         driver.switchTo().newWindow(WindowType.WINDOW);
         driver.get("https://Walmart.com");
 
-        //Sayfa title’nin “Walmart” iceri icermedigini test edin
+        //Sayfa title’nin “Walmart” icerip icermedigini test edin
         String actualWalmartTitle = driver.getTitle();
         String beklenenKelime = "Walmart";
         Assert.assertTrue(actualWalmartTitle.contains(beklenenKelime));

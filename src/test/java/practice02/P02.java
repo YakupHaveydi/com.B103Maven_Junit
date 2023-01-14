@@ -50,7 +50,7 @@ public class P02 {
         System.out.println("Sonuc Sayısı = " +sonuc);
 
         //sonuc sayisinin 10 milyon'dan fazla oldugunu test edin
-        sonuc=sonuc.replaceAll("\\D",""); // ReplaceAll methodu ile \\D'i kullanarak bütün noktalama işaretlerini hiçlikle değiştir
+        sonuc=sonuc.replaceAll("\\D",""); // ReplaceAll methodu ile \\D'i kullanarak bütün noktalama işaretlerini hiçlikle değiştir.
         int istenenSayi = 10000000;
         Assert.assertTrue(Integer.parseInt(sonuc)>istenenSayi);
         //Sayfayi kapatin

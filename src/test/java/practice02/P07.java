@@ -13,15 +13,15 @@ public class P07 extends TestBase {
 
     @Test
     public void test01() {
-        // https://the-internet.herokuapp.com/iframe adresine gidiniz
+        // https://the-internet.herokuapp.com/iframe adresine gidiniz.
         // An iFrame conteining... başlığının altındaki Text Box’a “Techproeducation” yazin.
-        // TextBox’in altinda bulunan “Elemental Selenium” linkinin gorunur oldugunu test edin
-        // Elemental Selenium linkine tıklayın
-        // Açılan sayfada sayfa başlığını yazdırınız
-        // Elemental Selenium başlığı altındaki "Source Labs" linkinin gorunur olduğunu test edin
-        // Source labs linkine tıklayın
-        // Açılan sayfada sayfa başlığını yazdırınız
-        // ilk sekmeye geri dönelim ve url'ini yazdıralım
+        // TextBox’in altinda bulunan “Elemental Selenium” linkinin gorunur oldugunu test edin.
+        // Elemental Selenium linkine tıklayın.
+        // Açılan sayfada sayfa başlığını yazdırınız.
+        // Elemental Selenium başlığı altındaki "Source Labs" linkinin gorunur olduğunu test edin.
+        // Source labs linkine tıklayın.
+        // Açılan sayfada sayfa başlığını yazdırınız.
+        // ilk sekmeye geri dönelim ve url'ini yazdıralım.
         // ilk sekmeyi kapatalım.
 
 
@@ -39,19 +39,19 @@ public class P07 extends TestBase {
 
 
         // TextBox’in altinda bulunan “Elemental Selenium” linkinin gorunur oldugunu test edin.
-        driver.switchTo().defaultContent();//refresh de yapilabilir
+        driver.switchTo().defaultContent(); //refresh de yapilabilir iframeden cikmak icin kullanilir
         WebElement elementalSeleniumLinki = driver.findElement(By.xpath("//*[.='Elemental Selenium']"));
         Assert.assertTrue(elementalSeleniumLinki.isDisplayed());
 
 
-        // Elemental Selenium linkine tıklayın
+        // Elemental Selenium linkine tıklayın   1.yol
         elementalSeleniumLinki.click();
         List<String> windowHandles = new ArrayList<String>(driver.getWindowHandles());
         System.out.println("Açılan pencerelerin handle değerleri : "+windowHandles);
         driver.switchTo().window(windowHandles.get(1));
 
 
-        /*
+        /*      2.yol
         Set<String> windowHandleseti = driver.getWindowHandles();
         System.out.println(windowHandleseti);
         String ikinciSayfaWindowHandleDegeri="";
@@ -61,6 +61,7 @@ public class P07 extends TestBase {
             }
         }
          */
+
 
         // Açılan sayfada sayfa başlığını yazdırınız
         System.out.println("Elemantal Selenium Sayfa Başlığı : "+driver.getTitle());

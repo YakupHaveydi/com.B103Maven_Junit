@@ -1,5 +1,6 @@
 package utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.*;
@@ -9,9 +10,12 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 public abstract class TestBase {
     //    TestBase i abstract yapmamizin sebebi bu sinifin objesini olusturmak istemiyorum
@@ -22,25 +26,25 @@ public abstract class TestBase {
     protected static WebDriver driver;
     //    setUp
     @Before
-    public void setup(){
+    public void setup()  {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        //        driver=WebDriverManager.chromedriver().create();
+    //        driver=WebDriverManager.chromedriver().create();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));//20 SANIYEYE KADAR BEKLE.SELENIUM
     }
     //    tearDown
     @After
     public void tearDown(){
         waitFor(5);
-        //driver.quit();
+        driver.quit();
     }
     //    MULTIPLE WINDOW:
-    //    1 parametre alir : Gecis Yapmak Istedigim sayfanin Title
-    //    ORNEK:
-    //    driver.get("https://the-internet.herokuapp.com/windows");
-    //    switchToWindow("New Window");
-    //    switchToWindow("The Internet")
+//    1 parametre alir : Gecis Yapmak Istedigim sayfanin Title
+//    ORNEK:
+//    driver.get("https://the-internet.herokuapp.com/windows");
+//    switchToWindow("New Window");
+//    switchToWindow("The Internet")
     public static void switchToWindow(String targetTitle) {
         String origin = driver.getWindowHandle();
         for (String handle : driver.getWindowHandles()) {
@@ -52,8 +56,8 @@ public abstract class TestBase {
         driver.switchTo().window(origin);
     }
     //    windowNumber sıfır (0)'dan başlıyor.
-    //    index numarasini parametre olarak alir
-    //    ve o indexli pencerece gecis yapar
+//    index numarasini parametre olarak alir
+//    ve o indexli pencerece gecis yapar
     public static void switchToWindow(int windowNumber){
         List<String> list = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(list.get(windowNumber));
@@ -84,12 +88,10 @@ public abstract class TestBase {
     }
     //    ACTIONS_SCROLL_DOWN
     public static void scrollDownActions() {
-//        Actions actions = new Actions(driver);
         new Actions(driver).sendKeys(Keys.PAGE_DOWN).perform();
     }
     //    ACTIONS_SCROLL_UP
     public static void scrollUpActions() {
-//        Actions actions = new Actions(driver);
         new Actions(driver).sendKeys(Keys.PAGE_UP).perform();
     }
     //    ACTIONS_SCROLL_RIGHT
@@ -110,8 +112,6 @@ public abstract class TestBase {
 //        Actions actions = new Actions(driver);
         new Actions(driver).dragAndDropBy(source,x,y).perform();
     }
-
-    //cok kullanilmaz
     //    DYNAMIC SELENIUM WAITS:
 //===============Explicit Wait==============//
     public static WebElement waitForVisibility(WebElement element, int timeout) {
@@ -130,6 +130,7 @@ public abstract class TestBase {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
+    //COK KULLANILMAZ
     public static void clickWithTimeOut(WebElement element, int timeout) {
         for (int i = 0; i < timeout; i++) {
             try {
@@ -140,7 +141,7 @@ public abstract class TestBase {
             }
         }
     }
-    //    This can be used when a new page opens
+    //    This can be used when a new page opens. Yeni sagfaya gecislerde kullanilabilir
     public static void waitForPageToLoad(long timeout) {
         ExpectedCondition<Boolean> expectation = new ExpectedCondition<Boolean>() {
             public Boolean apply(WebDriver driver) {
@@ -166,5 +167,28 @@ public abstract class TestBase {
                 .ignoring(NoSuchElementException.class);
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
         return element;
+    }
+    //   SCREENSHOTS
+    public void takeScreenShotOfPage() throws IOException {
+//        1. Take screenshot
+        File image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//       2. Save screenshot
+//        getting the current time as string to use in teh screenshot name, previous screenshots will be kept
+        String currentTime = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+//        Path of screenshot save folder               folder / folder    /file name
+        String path = System.getProperty("user.dir")+"/test-output/Screenshots/"+currentTime+"image.png";
+        FileUtils.copyFile(image,new File(path));
+    }
+    //    SCREENSHOT
+//    @params: WebElement
+//
+    public void takeScreenshotOfElement(WebElement element) throws IOException {
+//        1. take screenshot
+        File image = element.getScreenshotAs(OutputType.FILE);
+//        2. save screenshot
+//        path
+        String currentTime = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+        String path = System.getProperty("user.dir")+"/test-output/Screenshots/"+currentTime+"image.png";
+        FileUtils.copyFile(image,new File(path));
     }
 }
